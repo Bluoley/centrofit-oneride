@@ -1,75 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Division from "../layouts/Division.astro";
 ---
 
 <Layout title="Centro Fit | One Ride">
-  <main class="flex flex-col h-screen md:flex-row">
-    <a
-      href="/centrofit"
-      class="flex items-center justify-center grow centrofit-a"
-    >
-      <img
-        class="centrofit-img_imgDefault h-full md:opacity-100 opacity-0 w-full object-cover absolute z-[-1] blur-[2px] brightness-[0.3] contrast-[1.11]"
-        src="/centrofit_1_desktop.avif"
-        alt="centrofit_default"
-      />
-      <img
-        class="centrofit-img_imgHover h-full w-full opacity-100 md:opacity-0 object-cover absolute z-[-1] blur-[4px]"
-        src="/centrofit_1_desktop_color.avif"
-        alt="centrofit_color"
-      />
-
-      <img
-        class="md:h-500 h-64"
-        src="/centrofit_logo.avif"
-        alt="centrofit_logo"
-      />
-    </a>
-    <a
-      href="/oneride"
-      class="flex items-center justify-center grow relative oneride-a"
-    >
-      <img
-        class="oneride-img_imgDefault h-full md:opacity-100 opacity-0 w-full object-cover absolute z-[-1] blur-[2px]"
-        src="/oneride_1_desktop.avif"
-        alt="oneride_default"
-      />
-      <img
-        class="oneride-img_imgHover h-full w-full opacity-100 md:opacity-0 object-cover absolute z-[-1] blur-[4px]"
-        src="/oneride_1_desktop_color.avif"
-        alt="oneride_color"
-      />
-      <img
-        class="md:h-500 h-64 z-1"
-        src="/oneride_logo.avif"
-        alt="oneride_logo"
-      />
-    </a>
-  </main>
+  <Division />
+  <main></main>
 </Layout>
-
-<style>
-  .oneride-a {
-    .oneride-img_imgHover {
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      .oneride-img_imgHover {
-        opacity: 1;
-      }
-    }
-  }
-
-  .centrofit-a {
-    .centrofit-img_imgHover {
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      .centrofit-img_imgHover {
-        opacity: 1;
-      }
-    }
-  }
-</style>
